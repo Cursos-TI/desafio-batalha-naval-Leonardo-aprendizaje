@@ -66,6 +66,13 @@ int main() {
                 for (int j = 0; j < 4; j++)
                     tabuleiro[6][4 + j] = 3;
 
+                // Navio Diagonal de tamanho 3 (Posição fixa: )
+                int linha = 0; // Tive que criar essas variaveis para me ajudar a fazer o codigo.
+                int coluna = 9;
+
+                for (int i = 0; i < 3; i++)
+                    tabuleiro[linha + i][coluna - i] = 3;
+
                 limparTela();
                 imprimirTabuleiro(tabuleiro);
                 aguardarEnter();
